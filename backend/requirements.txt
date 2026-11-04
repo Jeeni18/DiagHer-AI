@@ -11,3 +11,4 @@ markdown-it-py==3.0.0
 ordered-set==4.1.0
 limits==5.4.0
 wrapt==1.17.2
+gunicorn==22.0.0

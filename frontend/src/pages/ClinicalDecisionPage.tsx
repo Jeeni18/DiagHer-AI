@@ -22,9 +22,9 @@ import {
 import MultiSelectDropdown from '../components/MultiSelectDropdown';
 
 // ============ CONFIGURATION ============
-// Replace this with your ngrok URL when available
-const API_BASE_URL = 'https://081131d17200.ngrok-free.app/api/v1';
-// For ngrok, it will look like: 'https://your-ngrok-url.ngrok.io/api/v1'
+// In dev, Vite proxies /api to the Flask backend (see vite.config.ts).
+// Set VITE_API_BASE_URL to point at a different backend.
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api/v1';
 
 // =======================================
 
@@ -233,13 +233,6 @@ const ClinicalDecisionPage = () => {
       symptomsObj[symptom] = 1;
     });
     setSymptoms(symptomsObj);
-  };
-
-  const handleSymptomChange = (symptom: string, checked: boolean) => {
-    setSymptoms(prev => ({
-      ...prev,
-      [symptom]: checked ? 1 : 0
-    }));
   };
 
   const handleSymptomsChange = (selectedValues: string[]) => {
