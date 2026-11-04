@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Brain, TrendingUp, Users, Sparkles } from 'lucide-react';
+import firstImage from '../assets/first.png';
+import secondImage from '../assets/second.png';
+import thirdImage from '../assets/third.png';
 
 interface TechnologySectionProps {
   scrollY: number;
@@ -110,7 +113,7 @@ const TechnologySection: React.FC<TechnologySectionProps> = ({ scrollY }) => {
               <div
                 className="w-full h-[120%] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 style={{
-                  backgroundImage: `url('src/assets/first.png')`,
+                  backgroundImage: `url(${firstImage})`,
                   backgroundPosition: 'center 30%'
                 }}
               ></div>
@@ -119,7 +122,7 @@ const TechnologySection: React.FC<TechnologySectionProps> = ({ scrollY }) => {
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out pointer-events-none"
                 style={{
-                  backgroundImage: `url('src/assets/second.png')`,
+                  backgroundImage: `url(${secondImage})`,
                   transform: `scale(${Math.max(1, 1.2 - baseScroll * 0.0003)}) translateY(${floatY}px)`,
                   transformOrigin: 'center center',
                   backgroundPosition: 'center center',
@@ -132,7 +135,7 @@ const TechnologySection: React.FC<TechnologySectionProps> = ({ scrollY }) => {
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out pointer-events-none"
                 style={{
-                  backgroundImage: `url('src/assets/third.png')`,
+                  backgroundImage: `url(${thirdImage})`,
                   transform: `scale(${Math.max(1, 1.3 - baseScroll * 0.0004)}) translateY(${-floatY}px)`,
                   transformOrigin: 'center center',
                   backgroundPosition: 'center center',

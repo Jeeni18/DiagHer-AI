@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import bgImage from '../assets/bg.jpg';
 
 interface HeroSectionProps {
   scrollY: number;
@@ -16,7 +17,7 @@ const Hero: React.FC<HeroSectionProps> = ({ scrollY }) => {
           <motion.div
             className="absolute inset-0 w-full h-[120%] bg-cover bg-center"
             style={{
-              backgroundImage: `URL('src/assets/bg.jpg')`,
+              backgroundImage: `url(${bgImage})`,
               transform: `translateY(${scrollY * 0.5}px)`,
               filter: 'brightness(0.3) contrast(1.1)'
             }}

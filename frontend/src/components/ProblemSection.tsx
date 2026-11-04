@@ -1,6 +1,7 @@
 import React from 'react';
 import { AlertTriangle } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
+import problemImage from '../assets/problem.jpg';
 
 interface ProblemSectionProps {
   scrollY: number;
@@ -102,7 +103,7 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ scrollY }) => {
               <div
                 className="w-full h-full bg-cover bg-center transition-all duration-300 ease-out group-hover:scale-105 group-hover:brightness-110"
                 style={{
-                  backgroundImage: `url('src/assets/problem.jpg')`,
+                  backgroundImage: `url(${problemImage})`,
                   transform: `scale(${zoomScale}) translateY(${sectionOffset * 0.15}px)`,
                   backgroundPosition: 'center',
                   transformOrigin: 'center center',
