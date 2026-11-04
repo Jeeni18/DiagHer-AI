@@ -168,7 +168,3 @@ curl -X POST http://127.0.0.1:5000/api/v1/drug/analyze \
 ## ⚠️ Disclaimer
 
 DiagHer is a decision support tool for healthcare providers. It does **not** replace professional medical judgment, and it should not be used as the only basis for a diagnosis or treatment decision.
-
----
-
-*Built with ❤️ by Team CodeRed*
