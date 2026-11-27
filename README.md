@@ -1,6 +1,6 @@
 # DiagHer 🩺💜
 
-**AI-powered clinical decision support for gender-aware healthcare.** Built by Team **CodeRed**.
+**AI-powered clinical decision support for gender-aware healthcare.**
 
 Women are more likely to be misdiagnosed or have their diagnosis delayed, and they report more adverse drug reactions than men. DiagHer helps healthcare providers in two ways:
 
